@@ -50,7 +50,7 @@ function compile(node, name) {
       compiled[k] = decl[k];
 
     compiled.value = decl.value
-      .replace(/\$[1-9]/g, function(m) {
+      .replace(/\$[0-9]+/g, function(m) {
         argnum = Math.max(argnum, m.slice(1));
         return '\u0001' + m + '\u0001';
       }) // jshint ignore:line
@@ -68,6 +68,8 @@ function compile(node, name) {
         "trying to define macro '" + name + "' with no arguments, " +
         "consider turning it into a class and extending using " +
         "rework-inherit instead");
+  } else if (argnum > 9) {
+    throw new Error("trying to define macro '" + name + "' with more than 9 arguments");
   }
 
   var assertion = (
