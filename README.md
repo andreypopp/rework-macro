@@ -1,6 +1,7 @@
 # rework-macro
 
-Macros implementation for rework, allows you to define a macros right into CSS:
+Macros implementation for rework, allows you to define macros right in CSS
+source:
 
     @macro colored-position {
       position: $1;
@@ -18,7 +19,7 @@ Will expand into:
       border: 1px solid red;
     }
 
-Macro bodies can expand other macros but recursive expansion isn't allowed.
+Macro body can expand other macros but recursive expansion isn't allowed.
 
 ## Installation
 
