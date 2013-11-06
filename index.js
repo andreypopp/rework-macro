@@ -15,7 +15,7 @@ function visit(macros, node) {
     node.declarations = apply(macros, node);
     macros[name] = compile(node, name);
   } else if (node.rules) {
-    node.rules = node.rules.macros(visit.bind(null, macros)).filter(Boolean);
+    node.rules = node.rules.map(visit.bind(null, macros)).filter(Boolean);
     return node;
   } else if (node.declarations) {
     node.declarations = apply(macros, node);
