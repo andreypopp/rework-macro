@@ -18,6 +18,8 @@ Will expand into:
       border: 1px solid red;
     }
 
+Macro bodies can expand other macros but recursive expansion isn't allowed.
+
 ## Installation
 
     % npm install rework-macro
