@@ -1,6 +1,6 @@
 {
   "name": "rework-macro",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Macro CSS transform for rework",
   "main": "index.js",
   "dependencies": {},
