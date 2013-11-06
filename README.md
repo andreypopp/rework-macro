@@ -21,6 +21,15 @@ Will expand into:
 
 Macro body can expand other macros but recursive expansion isn't allowed.
 
+Other random limitations:
+
+  * macros with no arguments are not allowed — consider turning them into classes
+    and use [rework-inherit](https://github.com/reworkcss/rework-inherit)
+    instead.
+
+  * macros with more than 9 arguments are not allowed... for no reason,
+    consider forking this repo and fixing this.
+
 ## Installation
 
     % npm install rework-macro
