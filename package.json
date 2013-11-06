@@ -1,0 +1,27 @@
+{
+  "name": "rework-macro",
+  "version": "0.0.0",
+  "description": "Macro CSS transform for rework",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "mocha": "~1.14.0",
+    "css": "~1.4.4",
+    "jshint": "~2.3.0",
+    "semver": "~2.2.1"
+  },
+  "scripts": {
+    "test": "./node_modules/.bin/mocha -R spec specs/*.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "andreypopp/rework-macro"
+  },
+  "keywords": [
+    "rework",
+    "css",
+    "macro"
+  ],
+  "author": "Andrey Popp <8mayday@gmail.com>",
+  "license": "MIT"
+}
