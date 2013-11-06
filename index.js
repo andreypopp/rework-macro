@@ -28,7 +28,7 @@ function apply(macros, node) {
   for (var i = 0, len = node.declarations.length; i < len; i++) {
     var decl = node.declarations[i];
     if (macros[decl.property]) {
-      var args = decl.value.split(' ');
+      var args = decl.value.split(' ').filter(Boolean);
       args.unshift(decl);
       declarations = declarations.concat(macros[decl.property].apply(null, args));
     } else {
