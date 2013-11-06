@@ -63,6 +63,13 @@ function compile(node, name) {
     code.push(compiled);
   }
 
+  if (argnum === 0) {
+    throw new Error(
+        "trying to define macro '" + name + "' with no arguments, " +
+        "consider turning it into a class and extending using " +
+        "rework-inherit instead");
+  }
+
   var assertion = (
     'if (undefined === $' + argnum + ' || undefined !== $' + (argnum + 1) + ') {' +
     '  throw new Error("unable to expand macro \'' +
