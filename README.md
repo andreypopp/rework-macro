@@ -34,12 +34,12 @@ Other random limitations:
 
     % npm install rework-macro
 
-## Usage with xcss
+## Usage with [xcss](https://github.com/andreypopp/xcss)
 
     % npm install -g xcss
     % xcss -t rework-macro ./src.css > transformed.css
 
-## Usage with rework
+## Usage with [rework](https://github.com/visionmedia/rework)
 
     var rework  = require('rework');
     var macro   = require('rework-macro');
