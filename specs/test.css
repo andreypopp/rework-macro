@@ -1,3 +1,5 @@
+/* a comment */
+
 @macro position {
   position: $1;
   color: red;
