@@ -20,6 +20,8 @@ function visit(macros, node) {
   } else if (node.declarations) {
     node.declarations = apply(macros, node);
     return node;
+  } else {
+    return node;
   }
 }
 
